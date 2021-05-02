@@ -1,0 +1,4 @@
+echo off
+taskkill /IM iexplore.exe /T /F
+Del /F /S /Q /A "C:\Users\%Username%\AppData\Local\Microsoft\Windows\Temporary Internet Files\*"
+Del /F /S /Q /A "C:\Users\%Username%\AppData\Roaming\Microsoft\Windows\Cookies\*"

@@ -1,0 +1,11 @@
+xcopy %USERPROFILE%\Favorites %USERPROFILE%\Desktop\Favorites\  /y /v /i /s /e
+
+# нопка сброса:
+
+RunDll32.exe InetCpl.cpl,ResetIEtoDefaults
+
+#To delete all caches and settings УAlso delete files and settings stored by add-onsФ:
+
+RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 4351
+
+exit
